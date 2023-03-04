@@ -1,0 +1,59 @@
+.profile {
+  cursor: pointer;
+
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
+  > div:first-of-type {
+    --tw-text-opacity: 1;
+    color: rgb(56 190 254 / var(--tw-text-opacity));
+  }
+
+  &_mobile {
+    display: none;
+  }
+
+  &__dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 8px 0px;
+    position: relative;
+    outline: 0px;
+    --tw-bg-opacity: 0.5;
+    background-color: rgb(56 190 254 / var(--tw-bg-opacity));
+
+    li {
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      color: inherit;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      display: flex;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      text-decoration: none;
+      min-height: 48px;
+      padding: 6px 16px;
+      box-sizing: border-box;
+      white-space: nowrap;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+    }
+  }
+}

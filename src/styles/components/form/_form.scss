@@ -1,0 +1,312 @@
+.form-item {
+  margin-bottom: 16px;
+  text-align: left;
+
+  &.has-error {
+    input,
+    .ant-input-affix-wrapper {
+      border-color: $color_red;
+    }
+
+    .ant-checkbox-inner {
+      border-color: $color_red;
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color_white;
+    margin-bottom: 12px;
+    text-align: left;
+
+    span {
+      svg {
+        vertical-align: sub;
+      }
+    }
+
+    @media (max-width: $breakpoint_mobile_max) {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  input,
+  .ant-input-search .ant-input,
+  .ant-input-search .ant-input,
+  .ant-input-affix-wrapper {
+    background: transparent;
+    padding: 12px 16px;
+    border: 1px solid $color_gray_2;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color_gray;
+    box-shadow: none;
+
+    input {
+      border-radius: 0;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $color_primary;
+    }
+
+    @media (max-width: $breakpoint_mobile_max) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .ant-input-search {
+    border: 1px solid $color_gray_2;
+    border-radius: 8px;
+
+    &:focus,
+    &:hover {
+      border-color: $color_primary;
+    }
+    .ant-input {
+      border: none;
+      border-radius: 7px 0 0 7px;
+
+      &-group-addon {
+        background: transparent;
+
+        button {
+          background: none;
+          border: none;
+          box-shadow: none;
+          outline: none;
+          padding: 0 12px;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+
+          path {
+            fill: $color_gray_4;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-input-prefix {
+    margin-right: 8px;
+  }
+
+  .ant-checkbox {
+    top: 0;
+
+    &-indeterminate .ant-checkbox-inner::after {
+      background: $color_primary;
+    }
+
+    &-inner {
+      &::after {
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+        width: 6.714286px;
+        height: 12.142857px;
+        top: 40%;
+        border-color: $color_gray_3;
+        z-index: 1;
+      }
+    }
+
+    &-indeterminate .ant-checkbox-inner::after {
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+    }
+
+    &-wrapper:hover .ant-checkbox-inner,
+    &:hover .ant-checkbox-inner,
+    &-input:focus + .ant-checkbox-inner,
+    &-checked .ant-checkbox-inner,
+    &-checked:after {
+      border-color: $color_primary;
+    }
+
+    &-checked .ant-checkbox-inner,
+    &-checked:after {
+      background: $color_primary;
+    }
+
+    &-wrapper {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 12px;
+      color: $color_white;
+      align-items: center;
+    }
+
+    &-inner {
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 3px;
+      border: 1px solid $color_gray_2;
+    }
+  }
+
+  .ant-select {
+    &-item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $color_gray;
+    }
+  }
+
+  .ant-select-wrapper,
+  .ant-picker {
+    flex: 0 1 100%;
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+    border-color: $color_primary;
+  }
+
+  .ant-select-single,
+  .ant-select:not(.ant-select-customize-input) {
+    width: 100%;
+    .ant-select-selector {
+      border: 1px solid $color_gray_2;
+      border-radius: 8px;
+      background: transparent;
+      height: 40px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $color_gray;
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        line-height: inherit;
+      }
+
+      .ant-space {
+        height: 100%;
+        line-height: 20px;
+        align-items: center;
+
+        .ant-image {
+          vertical-align: middle;
+        }
+      }
+
+      .ant-image {
+        img {
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+
+  .ant-picker {
+    background: $color_gray_3;
+    border: 1px solid $color_gray_2;
+    border-radius: 8px;
+    padding: 9px 16px;
+    height: 40px;
+
+    &:hover,
+    &-focused {
+      box-shadow: none;
+      outline: none;
+      border-color: $color_primary;
+    }
+
+    &:hover {
+      .ant-picker-clear {
+        svg path {
+          fill: $color_gray_4;
+        }
+      }
+    }
+
+    svg path {
+      fill: $color_gray_4;
+      opacity: 1;
+    }
+
+    input {
+      border: none;
+      padding: 0;
+    }
+
+    &-clear {
+      width: 20px;
+      height: 20px;
+      background: $color_gray_3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-panel {
+      border: none;
+
+      &-container {
+        background: $color_gray_6;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+      }
+    }
+
+    &-header {
+      border-bottom: 1px solid $color_gray_2;
+
+      button {
+        color: $color_white;
+      }
+    }
+
+    &-footer {
+      border-top: 1px solid $color_gray_2;
+    }
+
+    &-today-btn {
+      color: $color_primary;
+    }
+
+    &-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+      border-color: $color_primary;
+    }
+
+    &-header-view button:hover {
+      color: $color_primary;
+    }
+
+    &-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+    &-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+    &-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+      background: $color_primary;
+    }
+
+    &-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+    &-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+      .ant-picker-cell-inner {
+      background-color: $color_primary;
+    }
+
+    &-cell-in-view {
+      color: $color_white;
+    }
+
+    &-content th {
+      color: $color_white;
+    }
+  }
+}

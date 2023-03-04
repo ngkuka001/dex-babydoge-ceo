@@ -1,0 +1,63 @@
+.ant-select {
+  &-single:not(.ant-select-customize-input) &-selector .ant-select-selection-search-input {
+    height: 100%;
+  }
+
+  &-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 8px 0px;
+    position: relative;
+    outline: 0px;
+    --tw-bg-opacity: 0.5;
+    background-color: rgb(56 190 254 / var(--tw-bg-opacity));
+    min-width: 48px !important;
+  }
+
+  &-item-option {
+    &-content {
+      line-height: 1;
+    }
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    color: inherit;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    padding: 6px 16px;
+    box-sizing: border-box;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled),
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    color: inherit;
+    font-weight: 400;
+    background-color: transparent;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+}

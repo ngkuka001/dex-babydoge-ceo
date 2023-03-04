@@ -1,0 +1,35 @@
+// size screen responsive
+// Small devices (landscape phones, 576px and up)
+// Extra large devices (large desktops, 1200px and up)
+// Large devices (desktops, 992px and up)
+// Medium devices (tablets, 768px and up)
+$breakpoint_mobile_max: 575px;
+$breakpoint_tablet_max: 767px;
+$breakpoint_desktop_max: 991px;
+$breakpoint_large_desktop_max: 1199px;
+$breakpoint_ultra_desktop_max: 1600px;
+
+//color
+$color_primary: #38BEFE;
+$color_black: #000000;
+$color_black_1: #0e1014;
+$color_white: #ffffff;
+$color_gray: #dcd4d1;
+$color_gray_2: #b1b1b1;
+$color_gray_3: #393939;
+$color_gray_4: #b9b5b4;
+$color_gray_5: #282828;
+$color_gray_6: #696969;
+$color_gray_7: #4d4d4e;
+$color_gray_8: #c4c4c4;
+$color_gray_9: #d0d0d0;
+$color_red: #f44336;
+$color_red_2: #ff6060;
+$color_green: #00b140;
+
+// font
+$font-main: 'IBM Plex Sans';
+
+// size
+$width-home: 504px;
+$table_border_radius: 8px;

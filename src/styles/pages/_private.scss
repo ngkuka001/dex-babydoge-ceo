@@ -1,0 +1,19 @@
+.page-private {
+  padding-top: 26px;
+  padding-bottom: 34px;
+  display: block !important;
+  background-size: contain;
+
+  h1.ant-typography {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: $color_white;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $breakpoint_mobile_max) {
+    padding-top: 32px;
+    padding-bottom: 49px;
+  }
+}

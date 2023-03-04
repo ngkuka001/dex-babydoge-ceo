@@ -1,0 +1,81 @@
+.warning,
+.note {
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-align: left;
+
+  .ant-typography {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $color_white;
+  }
+}
+
+html[lang='ja-jp'] {
+  .warning,
+  .note {
+    .ant-typography {
+      font-size: 11px;
+    }
+  }
+}
+
+.warning {
+  border: 1px solid $color_red_2;
+
+  svg path {
+    fill: $color_red;
+  }
+
+  &_message {
+    background: rgba(244, 67, 54, 0.1);
+    padding: 14px 16px;
+    border: 1px solid $color_red;
+    border-radius: 8px;
+    margin-top: 24px;
+
+    .ant-typography {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $color_red;
+      text-align: center !important;
+    }
+
+    + button {
+      margin-top: 32px !important;
+    }
+  }
+}
+
+.note {
+  background: rgba(190, 143, 48, 0.4);
+
+  span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: $color_primary;
+  }
+
+  svg path {
+    fill: $color_primary;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      right: 2px;
+      top: 2px;
+      margin-left: 4px;
+    }
+  }
+}
