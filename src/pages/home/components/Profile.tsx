@@ -80,9 +80,10 @@ const Profile = () => {
             displayType="text"
             value={addValue([tokenPrice, ...(totalAssets as any[])]) || 0}
             thousandSeparator
-            decimalScale={18}
-            prefix={`US$`}
+            decimalScale={2}
+            prefix={`$ `}
             className="ant-typography"
+            style={{ fontSize: 32, margin: '8px 0' }}
           />
 
           <span className="small">

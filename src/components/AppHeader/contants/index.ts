@@ -17,27 +17,34 @@ export const renderNavigation = (): NavigationProps[] => [
     children: [],
     isComingSoon: false,
   },
-  // {
-  //   key: 'swap',
-  //   text: getI18n()?.t('header.swap'),
-  //   link: ROUTE_URLS.SWAP,
-  //   children: [],
-  //   isComingSoon: false,
-  // },
-  // {
-  //   key: 'trade',
-  //   text: getI18n()?.t('header.trade'),
-  //   link: '',
-  //   children: [],
-  //   isComingSoon: true,
-  // },
-  // {
-  //   key: 'stake',
-  //   text: getI18n()?.t('header.stake'),
-  //   link: '',
-  //   children: [],
-  //   isComingSoon: true,
-  // },
+  {
+    key: 'trade',
+    text: 'Trade',
+    link: '/trade',
+    children: [],
+    isComingSoon: false,
+  },
+  {
+    key: 'earn',
+    text: 'Earn',
+    link: '/earn',
+    children: [],
+    isComingSoon: false,
+  },
+  {
+    key: 'nft',
+    text: 'NFT',
+    link: '/nft',
+    children: [],
+    isComingSoon: false,
+  },
+  {
+    key: 'win',
+    text: 'Win',
+    link: '/win',
+    children: [],
+    isComingSoon: false,
+  },
 ];
 
 export const DEFAULT_NAVIGATION = {

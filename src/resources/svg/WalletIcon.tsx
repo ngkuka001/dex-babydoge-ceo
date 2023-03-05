@@ -1,8 +1,8 @@
 const WalletIcon = () => {
   return (
     <svg
-      width="18"
-      height="24"
+      width="24px"
+      height="24px"
       viewBox="0 0 24 24"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

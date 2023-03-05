@@ -47,28 +47,18 @@ const Header: FC<HeaderProps> = () => {
   }, [location]);
 
   return screens.md ? (
-    <Sider style={{ padding: 16 }} width={280}>
+    <Sider style={{ padding: 16 }} width={280} className="sider-wrapper">
       <Row justify="space-between" style={{ height: '100%' }}>
         <div>
           <Link to={ROUTE_URLS.HOME}>
             <Image preview={false} src={Logo} alt="" />
           </Link>
-          <Space direction="vertical" align="center" size={16} style={{ width: '100%', marginTop: 16 }}>
-            <Link to={ROUTE_URLS.HOME}>Portfolio</Link>
-            <>
-              {address ? (
-                <Space>
-                  {/* <LanguageSelect /> */}
-                  <Profile />
-                </Space>
-              ) : (
-                <Space>
-                  <ConnectWalletButton />
-                  {/* <LanguageSelect /> */}
-                </Space>
-              )}
-            </>
-          </Space>
+          <div style={{ width: '100%', marginTop: 16 }}>
+            <div className="wallet-wrapper">{address ? <Profile /> : <ConnectWalletButton />}</div>
+
+            {/* <Link to={ROUTE_URLS.HOME}>Portfolio</Link> */}
+            <Navigation navigation={renderNavigation()} mode="vertical" currentPage={currentPage} />
+          </div>
         </div>
         <div className="social-wrapper">
           <a href="https://twitter.com/WalletCEO" target="_blank" rel="noreferrer">

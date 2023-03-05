@@ -58,6 +58,7 @@ const Profile: FC<ProfileProps> = ({ onClose }) => {
       >
         <Space className="profile" size={10}>
           <WalletIcon />
+          {convertAddressToDisplayValue(address)}
           <IconArrowDown />
         </Space>
       </Dropdown>

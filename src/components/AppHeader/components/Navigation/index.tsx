@@ -27,7 +27,12 @@ const Navigation: FC<NavigationComponentProps> = ({ navigation, mode, currentPag
     const { key, link, text, isComingSoon } = item;
 
     return (
-      <Item key={key}>
+      <Item
+        key={key}
+        className={cx({
+          active: currentPage?.key === key,
+        })}
+      >
         {isExternalLink(link) ? (
           <a
             href={link}
