@@ -1,7 +1,7 @@
 .ant-drawer {
   &-content,
   &-header {
-    background: rgb(17, 19, 23);
+    background: #001529;
   }
 
   &-header {
@@ -11,6 +11,9 @@
   &-body {
     padding: 0;
     flex: 0 1 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   &-header {
@@ -25,6 +28,26 @@
       }
     }
   }
+  .wallet-wrapper {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 16px;
+    a {
+      padding: 8px;
+      background: #80808040;
+      border-radius: 8px;
+      display: flex;
+    }
+  }
 
   &-content-wrapper {
     @media (max-width: $breakpoint_mobile_max) {
@@ -36,6 +59,7 @@
     top: 70px;
   }
   .drawer {
+
     &__content {
       height: 100%;
       display: flex;
@@ -107,7 +131,7 @@
             }
 
             &.active {
-              background: #cf4a67;
+              background: #34c5fe5c;
               color: white;
             }
           }
