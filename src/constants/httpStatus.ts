@@ -1,6 +1,0 @@
-const HTTP_STATUS_CONTSTANTS = {
-  OK: 200,
-  ERROR_CODE_401: 401,
-};
-
-export default HTTP_STATUS_CONTSTANTS;
