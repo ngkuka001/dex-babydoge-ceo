@@ -1,0 +1,57 @@
+.earn {
+  padding: 1em;
+  width: min(100%, 1100px);
+  margin: auto;
+}
+.earn .ant-typography {
+  color: #fff;
+}
+.earn .ant-collapse {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0);
+  border-color: #38befe;
+}
+.earn .ant-collapse .ant-collapse-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+.earn .ant-collapse .ant-collapse-item:last-child .ant-collapse-header {
+  border-radius: 8px;
+}
+.earn .ant-collapse .ant-collapse-item:last-child .ant-collapse-header[aria-expanded='true'] {
+  border-radius: 8px 8px 0 0;
+}
+.earn .ant-collapse .ant-collapse-item {
+  border-color: #38befe;
+}
+.earn .ant-collapse .ant-collapse-item .ant-collapse-header {
+  padding: 16px;
+  background-color: rgba(52, 197, 254, 0.36);
+  border-radius: 8px;
+}
+.earn .ant-collapse .ant-collapse-item .ant-collapse-header svg {
+  width: 24px;
+  height: 24px;
+}
+.earn .ant-collapse .ant-collapse-item .ant-collapse-header[aria-expanded='true'] {
+  border-radius: 8px 8px 0 0;
+}
+.earn .ant-collapse .ant-collapse-content {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border-color: #38befe;
+}
+.earn .ant-collapse-item:last-child {
+  border-color: #38befe;
+}
+.earn .ant-collapse-item:last-child .ant-collapse-content {
+  border-radius: 0 0 8px 8px;
+  border-color: #38befe;
+}
+.earn__extra-box {
+  padding: 32px 16px;
+  border: 1px solid #38befe;
+  border-radius: 8px;
+}
+.mt-4 {
+  margin-top: 16px;
+}
