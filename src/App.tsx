@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { withTranslation } from 'react-i18next';
-import { Route, HashRouter, Routes, Navigate, Link } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, Navigate, Link } from 'react-router-dom';
 
 import 'language/i18n';
 import routes, { ROUTE_URLS } from 'constants/routes';
@@ -44,7 +44,7 @@ const App = () => {
   };
 
   return (
-    <HashRouter>
+    <Router>
       <Layout>
         <Header />
 
@@ -53,7 +53,7 @@ const App = () => {
           <Route path="*" element={<Navigate to={ROUTE_URLS.HOME} />} />
         </Routes>
       </Layout>
-    </HashRouter>
+    </Router>
   );
 };
 
