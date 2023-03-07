@@ -1,9 +1,17 @@
 .swap {
+  .btn-primary {
+    color: #38BEFE;
+    border-color: #38BEFE;
+    font-size: 13px;
+  }
+  .text-primary-color {
+    color: #38BEFE !important;
+  }
   .swap-container {
     border-color: #38BEFE;
     background: transparent;
     border-radius: 8px;
-    width: 400px;
+    width:  min(100%, 480px);;
     margin: auto;
     margin-top: 32px;
     label:not(.ant-radio-button-wrapper) {
@@ -16,6 +24,22 @@
         font-size: 24px;
       }
     }
+    .swap-box {
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(56, 191, 254, 0.2);
+    }
+  }
+  .ant-tabs-nav {
+    margin: auto;
+    width: min(100%, 480px);
+  }
+  .ant-tabs-nav-wrap {
+    justify-content: center;
+    margin-top: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #38BEFE;
   }
 
   .swap-rate {
@@ -65,12 +89,14 @@
   }
 
   .btn-currency {
-    background: #38BEFE;
+    background: rgba(56, 191, 254, 0.5);
     border: none;
     color: #fff;
     border-radius: 4px;
     align-items: center;
     display: flex;
+    min-width: 120px;
+    justify-content: center;
     .ant-avatar {
       width: 18px;
       height: 18px;
@@ -91,9 +117,9 @@
   }
 
   .swap-price-info {
-    padding: 4px;
+    padding: 16px;
     border-radius: 8px;
-    border: 1px solid white;
+    border: 1px solid rgba(56, 191, 254, 0.8);
   }
 
   .swap-custom {
@@ -108,10 +134,13 @@
       text-align: center !important;
     }
   }
+  .ant-input-number-focused {
+    box-shadow: none;
+  }
 
   .swap-input {
-    text-align: end;
-    background-color: #262c38;
+    // text-align: end;
+    background-color: transparent;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -123,14 +152,23 @@
       background: transparent;
       border: none;
     }
+
+    &:focus {
+      box-shadow: none;
+    }
     input.ant-input-number-input {
-      text-align: end;
-      background-color: #262c38;
+      // text-align: end;
+      background-color: transparent;
       border: none;
       border-radius: 8px;
       color: #fff;
       padding-right: 8px;
+      font-size:32px;
+      padding: 0
     }
+  }
+  .mt-4 {
+    margin-top: 16px;
   }
 }
 

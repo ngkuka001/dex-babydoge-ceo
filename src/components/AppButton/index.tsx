@@ -7,7 +7,6 @@ import Loading from 'resources/images/loading_button.png';
 
 declare const ButtonVariants: ['default', 'primary', 'secondary', 'tertiary', 'connect'];
 declare type ButtonVariant = typeof ButtonVariants[number];
-
 type AppButtonProps = {
   variant?: ButtonVariant;
   prefixIcon?: ReactNode;

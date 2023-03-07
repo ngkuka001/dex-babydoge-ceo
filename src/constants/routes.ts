@@ -2,7 +2,7 @@ import PublicLayout from 'components/Layout/Public';
 import EarnPage from 'pages/earn';
 import HomePage from 'pages/home';
 import NftPage from 'pages/nft';
-import SwapPage from 'pages/swap';
+import SwapPage from 'pages/trade';
 import TradePage from 'pages/trade';
 
 export const ROUTE_URLS = {
@@ -70,6 +70,14 @@ const routes = [
     name: PAGE_KEYS.WIN,
     path: ROUTE_URLS.WIN,
     component: NftPage,
+    layout: PublicLayout,
+    isPrivate: false,
+    index: false,
+  },
+  {
+    name: PAGE_KEYS.SWAP,
+    path: ROUTE_URLS.SWAP,
+    component: SwapPage,
     layout: PublicLayout,
     isPrivate: false,
     index: false,
