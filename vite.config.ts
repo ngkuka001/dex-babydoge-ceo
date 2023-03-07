@@ -62,13 +62,13 @@ export default defineConfig({
       //   },
       // },
 
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        trade: resolve(__dirname, 'trade.html'),
-        earn: resolve(__dirname, 'earn.html'),
-        nft: resolve(__dirname, 'nft.html'),
-        win: resolve(__dirname, 'win.html'),
-      },
+      // input: {
+      //   main: resolve(__dirname, 'index.html'),
+      //   trade: resolve(__dirname, 'trade.html'),
+      //   earn: resolve(__dirname, 'earn.html'),
+      //   nft: resolve(__dirname, 'nft.html'),
+      //   win: resolve(__dirname, 'win.html'),
+      // },
       plugins: [
         polyfillNode(),
         inject({ Buffer: ['buffer', 'Buffer'] }),
