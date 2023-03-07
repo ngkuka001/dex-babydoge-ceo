@@ -1,0 +1,44 @@
+$color_processing_border: #f37021;
+$color_processing_background: rgba(243, 112, 33, 0.4);
+
+$color_claimable_border: #1f88e7;
+$color_claimable_background: rgba(31, 136, 231, 0.4);
+
+$color_claimed_border: #00b140;
+$color_claimed_background: rgba(0, 177, 64, 0.4);
+
+$color_failed_border: #f44336;
+$color_failed_background: rgba(244, 67, 54, 0.4);
+
+.ant-tag {
+  &.swap-status {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: $color_white;
+    border-radius: 4px;
+    padding: 9px 12px;
+    margin: 0;
+    border-radius: 1px solid $color_white;
+    min-width: 87px;
+    text-align: center;
+
+    &--processing {
+      border-color: $color_processing_border;
+      background: $color_processing_background;
+    }
+    &--claimable,
+    &--unclaimed {
+      border-color: $color_claimable_border;
+      background: $color_claimable_background;
+    }
+    &--claimed {
+      border-color: $color_claimed_border;
+      background: $color_claimed_background;
+    }
+    &--failed {
+      border-color: $color_failed_border;
+      background: $color_failed_background;
+    }
+  }
+}

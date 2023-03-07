@@ -1,0 +1,291 @@
+// default
+$color_default_button_background: rgb(56 190 254 / 0.08);
+$color_default_button: #ffffff;
+$color_default_border: rgb(56 190 254 / var(--tw-text-opacity));
+
+// primary
+$color_primary_button_background: rgba(0, 235, 207, 0.08);
+$color_primary_button: #be8f30;
+
+// secondary
+$color_secondary_button_background: rgb(56 190 254 / var(--tw-text-opacity));
+$color_secondary_button: #ffffff;
+
+// tertiary
+$color_tertiary_button_background: transparent;
+$color_tertiary_button: rgb(56 190 254 / var(--tw-text-opacity));
+
+// connect
+$color_connect_button_background: #696969;
+$color_connect_button: #ffffff;
+
+// disabled
+$color_disabled_button: #282828;
+
+.ant-btn:hover {
+  opacity: 0.8;
+}
+
+.ant-btn:focus > span,
+.ant-btn:active > span {
+  position: unset;
+}
+
+.ant-btn-two-chinese-chars > *:not(.anticon) {
+  letter-spacing: 0;
+  margin-right: 0;
+}
+
+.ant-btn.button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  min-width: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  --tw-text-opacity: 1;
+  color: rgb(56 190 254 / var(--tw-text-opacity));
+  text-transform: capitalize;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 8px;
+  height: 41px;
+
+  svg {
+    vertical-align: sub;
+  }
+
+  .prefix {
+    margin-right: 6px;
+  }
+  .suffix {
+    margin-left: 6px;
+  }
+
+  .ant-btn-loading-icon {
+    display: none;
+  }
+
+  span.pulse {
+    width: 0.75rem;
+    height: 0.75rem;
+    display: flex;
+    right: -0.25rem;
+    top: -0.25rem;
+    position: absolute;
+
+    > span:first-of-type {
+      opacity: 0.75;
+      --tw-bg-opacity: 1;
+      background: rgb(56 190 254 / var(--tw-text-opacity));
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      position: absolute;
+      border-radius: 9999px;
+    }
+
+    > span:last-of-type {
+      --tw-bg-opacity: 1;
+      background: rgb(56 190 254 / var(--tw-text-opacity));
+      border-radius: 9999px;
+      width: 0.75rem;
+      height: 0.75rem;
+      display: inline-flex;
+      position: relative;
+    }
+  }
+
+  .ant-spin-nested-loading {
+    width: 100%;
+
+    > div > .ant-spin {
+      height: 24px;
+      width: 24px;
+      position: relative;
+      margin: auto;
+
+      .ant-spin-dot {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    border: none;
+    cursor: not-allowed;
+    background: $color_disabled_button;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+      background: $color_disabled_button;
+      box-shadow: none;
+    }
+  }
+
+  &--default {
+    &:focus,
+    &:hover {
+      outline: none;
+      border: none;
+      opacity: 1;
+      background-color: $color_default_button_background;
+      border: 1px solid $color_default_border;
+    }
+
+    &:active {
+      outline: none;
+      border: none;
+      opacity: 1;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_default_button;
+    }
+  }
+
+  &--primary {
+    background-color: $color_primary_button_background;
+    color: $color_primary_button;
+    border: none;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $color_primary_button_background;
+      color: $color_primary_button;
+      border: none;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_primary_button;
+    }
+  }
+
+  &--secondary {
+    background-color: $color_secondary_button_background;
+    color: $color_secondary_button;
+    border: none;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_secondary_button;
+      background-color: $color_secondary_button_background;
+      border: none;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_secondary_button;
+    }
+  }
+
+  &--tertiary {
+    background-color: $color_tertiary_button_background;
+    color: $color_tertiary_button;
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $color_tertiary_button;
+      background-color: $color_tertiary_button_background;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_tertiary_button;
+    }
+  }
+
+  &--connect {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+
+    span {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .ant-image {
+      width: 5rem;
+    }
+
+    .ant-typography {
+      --tw-space-y-reverse: 0;
+      margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      font-size: 1rem;
+      line-height: 1.5rem;
+      --tw-text-opacity: 1;
+      color: rgb(209 213 219 / var(--tw-text-opacity));
+
+      span {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        font-weight: 600;
+        line-height: 1.75rem;
+        font-size: 1.125rem;
+      }
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+      border: none;
+      --tw-bg-opacity: 1;
+      background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+      color: $color_connect_button;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color_tertiary_button;
+    }
+  }
+}

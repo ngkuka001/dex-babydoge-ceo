@@ -1,0 +1,36 @@
+.page-home {
+  .page-swap {
+    background-size: contain;
+    padding: 32px 0;
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $breakpoint_tablet_max) {
+      padding: 48px 0;
+    }
+  }
+
+  .container > .sub-title.ant-typography {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color_gray;
+    letter-spacing: -0.003em;
+    max-width: $width-home;
+    margin: 0 auto 32px;
+
+    @media (max-width: $breakpoint_desktop_max) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+.token-distribution {
+  .container > .sub-title.ant-typography {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

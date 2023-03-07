@@ -1,0 +1,227 @@
+.swap {
+  .btn-primary {
+    color: #38BEFE;
+    border-color: #38BEFE;
+    font-size: 13px;
+  }
+  .text-primary-color {
+    color: #38BEFE !important;
+  }
+  .swap-container {
+    border-color: #38BEFE;
+    background: transparent;
+    border-radius: 8px;
+    width:  min(100%, 480px);;
+    margin: auto;
+    margin-top: 32px;
+    label:not(.ant-radio-button-wrapper) {
+      width: 100%;
+    }
+    .card-title-wrapper {
+      margin-bottom: 24px;
+      .card-title {
+        color: #38BEFE;
+        font-size: 24px;
+      }
+    }
+    .swap-box {
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(56, 191, 254, 0.2);
+    }
+  }
+  .ant-tabs-nav {
+    margin: auto;
+    width: min(100%, 480px);
+  }
+  .ant-tabs-nav-wrap {
+    justify-content: center;
+    margin-top: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #38BEFE;
+  }
+
+  .swap-rate {
+    margin-top: 8px;
+    label.ant-radio-button-wrapper {
+      border-right-color: #38BEFE !important;
+      border: 1px solid #38BEFE;
+      border-radius: 8px;
+      margin: 0 2px;
+      background: transparent;
+      color: #38BEFE;
+      height: 20px;
+      line-height: 18px;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      color: #fff;
+      background: #38BEFE;
+      border: 1px solid #38BEFE;
+    }
+  }
+
+  .ant-typography {
+    color: #fff;
+  }
+  .tolerance-wrapper {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      color: #fff;
+      background: #38BEFE;
+      border: 1px solid #38BEFE;
+    }
+  }
+
+  .form-label {
+    color: #38BEFE;
+  }
+  .pay-input {
+    margin-bottom: 4px !important;
+  }
+
+  .btn-currency {
+    background: rgba(56, 191, 254, 0.5);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    min-width: 120px;
+    justify-content: center;
+    .ant-avatar {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+
+  .swap-tolerance .ant-radio-button-wrapper {
+    background: transparent;
+    border: none !important;
+    color: white;
+    border-radius: 8px !important;
+  }
+
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    width: 0;
+    height: 0;
+  }
+
+  .swap-price-info {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(56, 191, 254, 0.8);
+  }
+
+  .swap-custom {
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    flex: 1;
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+    .ant-input-number-input {
+      text-align: center !important;
+    }
+  }
+  .ant-input-number-focused {
+    box-shadow: none;
+  }
+
+  .swap-input {
+    // text-align: end;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+    .ant-input-number-group-addon {
+      background: transparent;
+      border: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+    input.ant-input-number-input {
+      // text-align: end;
+      background-color: transparent;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      padding-right: 8px;
+      font-size:32px;
+      padding: 0
+    }
+  }
+  .mt-4 {
+    margin-top: 16px;
+  }
+}
+
+.swap-modal {
+  text-align: inherit;
+  .ant-modal-header {
+    background-color: #111827;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgb(240 240 240 / 10%);
+    .ant-modal-title {
+      color: #fff;
+    }
+  }
+  .ant-list-item {
+    border-bottom: none;
+    padding: 8px;
+    &:hover {
+      background: rgb(255 255 255 / 2%);
+    }
+  }
+  .ant-list-item-meta {
+    cursor: pointer;
+  }
+  .ant-list-item-meta-content {
+    .ant-list-item-meta-title {
+      color: #fff;
+    }
+    .ant-list-item-meta-description {
+      color: rgb(255 255 255 / 30%);
+    }
+  }
+  .btn-currency {
+    background: transparent;
+    border: 1px solid rgb(128 128 128 / 20%);
+    color: #fff;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+    .ant-avatar {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+    &:hover {
+      color: #38BEFE;
+      border-color: #38BEFE;
+    }
+  }
+
+  .current-list {
+    margin-top: 16px;
+    .ant-list-item-meta {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.token-distribution {
+  margin-top: 64px;
+  margin-bottom: 88px;
+
+  @media (max-width: $breakpoint_mobile_max) {
+    margin-top: 48px;
+    margin-bottom: 0;
+  }
+
+  .ant-table {
+    border: none;
+    max-width: 509px;
+    margin: 0 auto;
+    width: 100%;
+
+    &-container table > thead > tr:first-child {
+      th:first-child {
+        padding-left: 11px;
+      }
+      th:last-child {
+        padding-right: 11px;
+      }
+    }
+
+    &-thead > tr > th {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      color: $color_white;
+      text-align: center;
+      padding: 11px;
+
+      @media (max-width: $breakpoint_mobile_max) {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    &-tbody > tr > td {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: $color_white;
+      padding: 14px;
+      text-align: center;
+      border-top: 1px solid $color_gray_2;
+    }
+
+    &-container table > tbody > tr {
+      td:first-child {
+        padding-left: 14px;
+      }
+      td:last-child {
+        padding-right: 14px;
+      }
+    }
+
+    .ant-skeleton-element {
+      width: 100%;
+      .ant-skeleton-input {
+        height: 21px;
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+
+  .total-supply {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin: -16px 0 36px;
+    color: $color_primary;
+
+    .pending-amount {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      display: block;
+      margin-top: 8px;
+      color: $color_gray;
+    }
+  }
+
+  @media (max-width: $breakpoint_mobile_max) {
+  }
+}

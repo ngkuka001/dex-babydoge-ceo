@@ -1,0 +1,55 @@
+div.ant-typography,
+h1.ant-typography,
+h2.ant-typography,
+h3.ant-typography,
+h4.ant-typography,
+h5.ant-typography,
+.ant-typography p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: $color_white;
+}
+
+.ant-typography {
+  .ant-typography-copy {
+    margin-left: 9px;
+
+    svg {
+      vertical-align: sub;
+    }
+  }
+}
+
+h1.ant-typography {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 16px;
+
+  @media (max-width: $breakpoint_desktop_max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+html[lang='ja-jp'] {
+  h1.ant-typography {
+    @media (max-width: $breakpoint_desktop_max) {
+      font-size: 22px;
+    }
+  }
+}
+
+h2.ant-typography {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 16px;
+
+  @media (max-width: $breakpoint_desktop_max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
