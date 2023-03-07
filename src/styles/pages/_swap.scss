@@ -1,17 +1,17 @@
 .swap {
   .btn-primary {
-    color: #38BEFE;
-    border-color: #38BEFE;
+    color: #38befe;
+    border-color: #38befe;
     font-size: 13px;
   }
   .text-primary-color {
-    color: #38BEFE !important;
+    color: #38befe !important;
   }
   .swap-container {
-    border-color: #38BEFE;
+    border-color: #38befe;
     background: transparent;
     border-radius: 8px;
-    width:  min(100%, 480px);;
+    width: min(100%, 480px);
     margin: auto;
     margin-top: 32px;
     label:not(.ant-radio-button-wrapper) {
@@ -20,7 +20,7 @@
     .card-title-wrapper {
       margin-bottom: 24px;
       .card-title {
-        color: #38BEFE;
+        color: #38befe;
         font-size: 24px;
       }
     }
@@ -39,26 +39,26 @@
     margin-top: 32px;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #38BEFE;
+    border: 1px solid #38befe;
   }
 
   .swap-rate {
     margin-top: 8px;
     label.ant-radio-button-wrapper {
-      border-right-color: #38BEFE !important;
-      border: 1px solid #38BEFE;
+      border-right-color: #38befe !important;
+      border: 1px solid #38befe;
       border-radius: 8px;
       margin: 0 2px;
       background: transparent;
-      color: #38BEFE;
+      color: #38befe;
       height: 20px;
       line-height: 18px;
     }
     .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
     .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
       color: #fff;
-      background: #38BEFE;
-      border: 1px solid #38BEFE;
+      background: #38befe;
+      border: 1px solid #38befe;
     }
   }
 
@@ -76,13 +76,13 @@
     .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
     .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
       color: #fff;
-      background: #38BEFE;
-      border: 1px solid #38BEFE;
+      background: #38befe;
+      border: 1px solid #38befe;
     }
   }
 
   .form-label {
-    color: #38BEFE;
+    color: #38befe;
   }
   .pay-input {
     margin-bottom: 4px !important;
@@ -163,8 +163,8 @@
       border-radius: 8px;
       color: #fff;
       padding-right: 8px;
-      font-size:32px;
-      padding: 0
+      font-size: 32px;
+      padding: 0;
     }
   }
   .mt-4 {
@@ -213,8 +213,8 @@
       margin-right: 8px;
     }
     &:hover {
-      color: #38BEFE;
-      border-color: #38BEFE;
+      color: #38befe;
+      border-color: #38befe;
     }
   }
 
