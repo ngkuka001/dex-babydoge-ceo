@@ -1,8 +1,8 @@
 .earn {
   padding: 1em;
   width: min(100%, 1100px);
-  margin: auto;
-  .ant-typography {
+  margin: 32px auto;
+  .ant-typography:not(.ant-typography-secondary) {
     color: #fff;
   }
   .ant-collapse {
