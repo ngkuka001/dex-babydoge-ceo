@@ -1,0 +1,45 @@
+.nft {
+  padding: 1em;
+  width: min(100%, 1100px);
+  margin: auto;
+
+  &__card {
+    border-radius: 8px;
+    padding: 32px;
+    border: 1px solid #38befe;
+    width: min(100%, 440px);
+    &-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  .card-title-primary {
+    color: #38befe;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .card-text-primary {
+    font-weight: bold;
+  }
+
+  @keyframes jump {
+    0%,
+    to {
+      transform: translateY('0px');
+    }
+
+    50% {
+      transform: translateY(30px);
+    }
+  }
+  .animate-jump {
+    animation: jump 5s ease infinite;
+  }
+}
+.mt-4 {
+  margin-top: 16px;
+}
